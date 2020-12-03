@@ -3,7 +3,14 @@
     (replacing the placeholder with your Github name):
     https://api.github.com/users/<your name>
 */
-
+axios.get(URL =  'https://api.github.com/users/murphywrites')
+.then( response => {
+  console.log(response);
+})
+.catch( err => {
+  console.log(err);
+  // deal with the error in here
+})
 /*
   STEP 2: Inspect and study the data coming back, this is YOUR
     github info! You will need to understand the structure of this
